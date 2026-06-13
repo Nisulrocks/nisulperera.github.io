@@ -41,7 +41,10 @@
   <nav id="mainNav">
     <div class="nav-inner">
       <span class="nav-logo">NP</span>
-      <ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="navMenu">
         <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
         <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
         <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
@@ -58,7 +61,7 @@
       <h2>About Me</h2>
       <div class="about-grid">
         <div class="about-photo-wrap">
-          <img src="images/Profile-pic.jpeg" alt="W. Nisul Senuda Perera" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+          <img src="images/Profile-pic.jpeg" alt="W. Nisul Senuda Perera" class="about-photo">
         </div>
         <div class="card about-text">
           <p>Hi, I'm Nisul — a Diploma in Game Development graduate from Nanyang Polytechnic with a passion for building engaging, well-crafted games. My journey started with Scratch in primary school, grew through leading my secondary school's Robotics Club as president, and evolved into building full 2D and 3D games across multiple engines throughout my diploma.</p>
@@ -209,8 +212,7 @@
             </ul>
             <div class="project-meta"><span><i class="fas fa-graduation-cap"></i> Year 2 Sem 2</span></div>
             <div class="project-links"><a href="https://github.com/D-exter/WIU-DX1225-3DGP" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a></div>
-            <div class="screenshot-row" style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              
+            <div class="screenshot-row-2">
               <img src="images/wiu4-ss1.png" alt="WIU4 Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
               <img src="images/wiu4-ss2.png" alt="WIU4 Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
             </div>
@@ -233,8 +235,7 @@
             </ul>
             <div class="project-meta"><span><i class="fas fa-graduation-cap"></i> Year 2 Sem 1</span></div>
             <div class="project-links"><a href="https://github.com/D-exter/WIU-DX1224-2DGP" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a></div>
-            <div class="screenshot-row" style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              
+            <div class="screenshot-row-2">
               <img src="images/wiu3-ss1.png" alt="WIU3 Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
               <img src="images/wiu3-ss2.png" alt="WIU3 Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
             </div>
@@ -257,8 +258,7 @@
             </ul>
             <div class="project-meta"><span><i class="fas fa-users"></i> 4 Members</span><span><i class="fas fa-graduation-cap"></i> Year 1 Sem 2</span></div>
             <div class="project-links"><a href="https://github.com/D-exter/WIU-DX1125-CGSP" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a></div>
-            <div class="screenshot-row" style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              
+            <div class="screenshot-row-2">
               <img src="images/wiu2-ss1.png" alt="WIU2 Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
               <img src="images/wiu2-ss2.png" alt="WIU2 Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
             </div>
@@ -281,8 +281,7 @@
             </ul>
             <div class="project-meta"><span><i class="fas fa-users"></i> 5 Members</span><span><i class="fas fa-graduation-cap"></i> Year 1 Sem 1</span></div>
             <div class="project-links"><a href="https://github.com/D-exter/WIU-DX1124-ISP" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a></div>
-            <div class="screenshot-row" style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              
+            <div class="screenshot-row-2">
               <img src="images/wiu1-ss1.png" alt="WIU1 Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
               <img src="images/wiu1-ss2.png" alt="WIU1 Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
             </div>
@@ -312,8 +311,8 @@
       <div class="footer-name">W. Nisul Senuda Perera</div>
       <div class="footer-sub">Game Programmer · Diploma Graduate · Nanyang Polytechnic</div>
       <div class="social-links">
-        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Nisulrocks" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nisul-perera-3763203a6?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:nisulrocks@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
       <p>&copy; 2026 W. Nisul Senuda Perera. All rights reserved.</p>

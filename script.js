@@ -1,5 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+  }
 
   const progressBar = document.getElementById('scrollProgress');
   window.addEventListener('scroll', () => {
