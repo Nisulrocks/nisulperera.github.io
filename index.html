@@ -3,169 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W. Nisul Senuda Perera | Portfolio</title>
+    <title>W. Nisul Senuda Perera | Game Developer</title>
     <link rel="icon" href="images/N.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-    <meta name="description" content="Portfolio of W. Nisul Senuda Perera - Game Developer & Student">
-</head> 
+    <meta name="description" content="Portfolio of W. Nisul Senuda Perera - Game Developer, Diploma Graduate from Nanyang Polytechnic">
+</head>
 <body>
-    <header class="header">
-        <h1>W. Nisul Senuda Perera</h1>
-        <p class="subtitle">Game Developer & Student</p>
-        <div class="contact-info">
-            <a href="tel:+6586143572"><i class="fas fa-phone"></i> +65 8614 3572</a>
-            <a href="mailto:nisulrocks@gmail.com"><i class="fas fa-envelope"></i> nisulrocks@gmail.com</a>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="noise-overlay"></div>
+
+  <header class="header">
+    <div class="header-bg">
+      <div class="grid-lines"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="header-content">
+      <h1 id="typedName">W. Nisul Senuda Perera</h1>
+      <p class="subtitle">Game Programmer &amp; Developer</p>
+      <p class="header-desc">Diploma Graduate in Game Development · Unity · C# · C++ · OpenGL · Unreal Engine</p>
+      <div class="contact-info">
+        <a href="tel:+6586143572"><i class="fas fa-phone"></i> +65 8614 3572</a>
+        <a href="mailto:nisulrocks@gmail.com"><i class="fas fa-envelope"></i> nisulrocks@gmail.com</a>
+        <a href="https://nisulrocks.github.io/nisulperera.github.io/" target="_blank"><i class="fas fa-globe"></i> Portfolio</a>
+      </div>
+      <div class="header-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#about" class="btn-ghost">About Me</a>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mainNav">
+    <div class="nav-inner">
+      <span class="nav-logo">NP</span>
+      <ul>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#projects"><i class="fas fa-gamepad"></i> Projects</a></li>
+        <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <div class="section-label">01 / About</div>
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <img src="images/Profile-pic.jpeg" alt="W. Nisul Senuda Perera" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
         </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
-            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-            <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
-            <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="card">
-                <p>Hi, My name is Nisul and I am 17 years old. I am currently a student in Nanyang Polytechnic studying game development. Since primary school, I have been really interested in coding. I started off by using Scratch, a simple block-based programming language, which allowed me to grow my interest in creating games through programming. In secondary school, I joined my school's Robotics Club and became the president in my third year. I furthered my knowledge in block coding before graduating and joining the game development course to continue my learning. This year is my first year learning a proper programming language such as C and C++, and I am eager to learn more and improve as I go.</p>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="card">
-                <h3>Robotics Club President</h3>
-                <p>JuYing Secondary School (2022-2023)</p>
-                <ul>
-                    <li>Led the robotics team</li>
-                    <li>Mentored junior members in programming and robotics</li>
-                    <li>led Training sessions</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="card">
-                <h3><i class="fas fa-school"></i> Queenstown Primary</h3>
-                <p>PSLE (2014 - 2019)</p>
-                <p class="achievement">PSLE Results: <span class="highlight">Pending</span></p>
-            </div>
-            <div class="card">
-                <h3><i class="fas fa-school"></i> JuYing Secondary</h3>
-                <p>O Levels (2020 - 2023)</p>
-                <p class="achievement">O-Level Results: <span class="highlight">Pending</span></p>
-            </div>
-            <div class="card education-card">
-                <h3><i class="fas fa-university"></i> Nanyang Polytechnic</h3>
-                <p><strong>Diploma in Game Development</strong> (2024 - Present)</p>
-            
-                <div class="year-section">
-                    <h4>Year 1</h4>
-                    <ul>
-                        <li><strong>Course:</strong> C70 Game Development</li>
-                        <li><strong>School:</strong> Design and Media (SDM)</li>
-                        <li><strong>Semester 1 GPA:</strong> 3.2</li>
-                        <li><strong>Semester 2 GPA:</strong> 4.0</li>
-                        <li><strong>Final GPA:</strong> 3.6</li>
-                    </ul>
-                </div>
-            
-                <div class="year-section">
-                    <h4>Year 2</h4>
-                    <ul>
-                        <li><strong>Course:</strong> C70 Game Development</li>
-                        <li><strong>School:</strong> Design and Media (SDM)</li>
-                        <li><strong>Semester 1 GPA:</strong> Pending</li>
-                        <li><strong>Semester 2 GPA:</strong> Pending</li>
-                        <li><strong>Final GPA:</strong> Pending</li>
-                    </ul>
-                </div>
-            </div>
-            
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="card project-card">
-                    <div class="project-header">
-                        <h3>WIU Project Year 1 Semester 1</h3>
-                        <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">RPG</span>
-                            <span class="tag">Team Project</span>
-                        </div>
-                    </div>
-                    <p>We were tasked to create a storyboard RPG game using C++ in 2 weeks, applying all the knowledge we gained during the semester. We created a game document with a high concept statement and managed tasks on Trello.</p>
-                    <div class="project-details">
-                        <p><i class="fas fa-clock"></i> Duration: 2 weeks</p>
-                        <p><i class="fas fa-users"></i> Team Size: 5 members</p>
-                        <p><i class="fas fa-hourglass-end"></i> Personal Hours: 68 hours</p>
-                    </div>
-                </div>
-            </div>
-
-                <div class="card project-card">
-                    <div class="project-header">
-                        <h3>WIU Project Year 1 Semester 2</h3>
-                        <div class="project-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">3D Computer Graphics/ Physics</span>
-                            <span class="tag">Team Project</span>
-                        </div>
-                    </div>
-                    <p>We were tasked to create a 3D computer graphics game using models as well as realistic physics and the theme givent o us was carnival games</p>
-                    <div class="project-details">
-                        <p><i class="fas fa-clock"></i> Duration: 2 weeks</p>
-                        <p><i class="fas fa-users"></i> Team Size: 4 members</p>
-                        <p><i class="fas fa-hourglass-end"></i> Personal Hours: 68 hours</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="card skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>C++</h3>
-                    <div class="skill-level">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 40%"></div>
-                        </div>
-                        <span>Learning</span>
-                    </div>
-                </div>
-                <div class="card skill-card">
-                    <i class="fas fa-cubes"></i>
-                    <h3>Object Oriented Programming</h3>
-                    <div class="skill-level">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 35%"></div>
-                        </div>
-                        <span>Learning</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <div class="card about-text">
+          <p>Hi, I'm Nisul — a Diploma in Game Development graduate from Nanyang Polytechnic with a passion for building engaging, well-crafted games. My journey started with Scratch in primary school, grew through leading my secondary school's Robotics Club as president, and evolved into building full 2D and 3D games across multiple engines throughout my diploma.</p>
+          <p style="margin-top:1rem">Over three years at NYP, I progressed from writing my first C++ console game to developing a real-time multiplayer tower defense title in Unity — each project pushing me further as a programmer and designer. I care deeply about clean code, strong game feel, and shipping things that are actually fun to play. I am now looking to bring my skills into a professional game development environment.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">5</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">3.62</span><span class="stat-label">Cumulative GPA</span></div>
+            <div class="stat"><span class="stat-num">2025</span><span class="stat-label">Graduated</span></div>
+            <div class="stat"><span class="stat-num">2</span><span class="stat-label">Engines</span></div>
+          </div>
         </div>
-        <p>&copy; 2024 W. Nisul Senuda Perera. All rights reserved.</p>
-    </footer>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-label">02 / Experience</div>
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item card">
+          <div class="timeline-header">
+            <div>
+              <h3>Robotics Club President</h3>
+              <p class="timeline-org"><i class="fas fa-school"></i> JuYing Secondary School</p>
+            </div>
+            <span class="timeline-date">2022 – 2023</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Led a team of 15+ members, organising training schedules and competition preparation</li>
+            <li>Mentored junior members in block-based and entry-level programming concepts</li>
+            <li>Conducted weekly training sessions and represented the school at inter-school robotics competitions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-label">03 / Education</div>
+      <h2>Education</h2>
+      <div class="edu-list">
+        <div class="card edu-card edu-main">
+          <div class="edu-header">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div>
+              <h3>Nanyang Polytechnic</h3>
+              <p class="edu-sub">Diploma in Game Development (C70) · School of Design &amp; Media · Graduated 2025</p>
+            </div>
+          </div>
+          <div class="gpa-grid">
+            <div class="gpa-card">
+              <span class="gpa-year">Year 1</span>
+              <span class="gpa-val">3.6</span>
+              <span class="gpa-label">Final GPA</span>
+              <div class="gpa-sems"><span>S1: 3.2</span><span>S2: 4.0</span></div>
+            </div>
+            <div class="gpa-card">
+              <span class="gpa-year">Year 2</span>
+              <span class="gpa-val">3.76</span>
+              <span class="gpa-label">Final GPA</span>
+              <div class="gpa-sems"><span>S1: 3.6</span><span>S2: 4.0</span></div>
+            </div>
+            <div class="gpa-card">
+              <span class="gpa-year">Year 3</span>
+              <span class="gpa-val">3.5</span>
+              <span class="gpa-label">Final GPA</span>
+              <div class="gpa-sems"><span>S1: 3.5</span><span>S2: 3.5</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="edu-row">
+          <div class="card edu-card edu-sm">
+            <div class="edu-icon-sm"><i class="fas fa-school"></i></div>
+            <div>
+              <h3>JuYing Secondary School</h3>
+              <p class="edu-sub">GCE O-Levels · 2020 – 2023</p>
+            </div>
+          </div>
+          <div class="card edu-card edu-sm">
+            <div class="edu-icon-sm"><i class="fas fa-school"></i></div>
+            <div>
+              <h3>Queenstown Primary School</h3>
+              <p class="edu-sub">PSLE · 2014 – 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-label">04 / Projects</div>
+      <h2>Projects</h2>
+
+      <div class="card project-featured">
+        <div class="featured-badge"><i class="fas fa-star"></i> Featured Project</div>
+        <div class="featured-grid">
+          <div class="featured-media">
+            <div class="video-wrap video-wrap-featured"><iframe src="https://drive.google.com/file/d/1suGaDA5N_HEI1VWrYNb5kFy4HWDmzk4Z/preview" allowfullscreen allow="autoplay"></iframe></div>
+          </div>
+          <div class="featured-info">
+            <div class="project-tags">
+              <span class="tag tag-unity">Unity</span>
+              <span class="tag tag-csharp">C#</span>
+              <span class="tag tag-mp">Multiplayer</span>
+              <span class="tag tag-2d">2D</span>
+            </div>
+            <h3>Specialisation Project — 2D Multiplayer Tower Defense</h3>
+            <p>A fully playable 2D multiplayer tower defense game built in Unity with real-time co-op networking. Players collaborate to defend against waves of enemies using strategically placed towers. Built as the capstone project of my Diploma in Game Development.</p><p style="margin-top:0.75rem;font-size:0.875rem;color:var(--text-muted);"><strong style="color:var(--accent);">Work Process:</strong> Planned game systems using a GDD, implemented networking architecture first, then layered in gameplay mechanics iteratively with weekly team reviews. <strong style="color:var(--accent);">Results:</strong> Delivered a fully playable build that was successfully playtested by peers and demonstrated at the end-of-year showcase to lecturers and industry guests.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check-circle"></i> Real-time 2-player co-op using Unity Netcode</li>
+              <li><i class="fas fa-check-circle"></i> Enemy AI pathfinding and wave-spawning system</li>
+              <li><i class="fas fa-check-circle"></i> Tower placement, upgrade, and resource management</li>
+              <li><i class="fas fa-check-circle"></i> Full UI, audio, and game loop implementation</li>
+            </ul>
+            <div class="project-meta">
+              <span><i class="fas fa-users"></i> Team Project</span>
+              <span><i class="fas fa-graduation-cap"></i> Diploma Specialisation</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Nisulrocks/TowerRoyale" target="_blank" class="btn-primary btn-sm"><i class="fab fa-github"></i> Source Code</a>
+              <a href="https://drive.google.com/file/d/1zqKSrm8sgwPFHJ7qkUH5TYaB37NljsBz/view?usp=sharing" target="_blank" class="btn-ghost btn-sm"><i class="fas fa-external-link-alt"></i> Play Game</a>
+            </div>
+          </div>
+        </div>
+        <div class="screenshot-row">
+          
+          <img src="images/spec-ss1.png" alt="Specialisation Project Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px;">
+          
+          <img src="images/spec-ss2.png" alt="Specialisation Project Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px;">
+          
+          <img src="images/spec-ss3.png" alt="Specialisation Project Screenshot 3" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px;">
+        </div>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="card project-card">
+          <div class="project-media">
+            
+            <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1iuWqEO59eUqfzwhEcv-FvHcUDey8NjMF/preview" allowfullscreen allow="autoplay"></iframe></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag tag-unity">Unity</span><span class="tag tag-csharp">C#</span><span class="tag tag-3d">3D</span></div>
+            <h3>WIU 4 — 3D Unity Game</h3>
+            <p>A 3D game built in Unity featuring player movement, physics-based interactions, camera control, and scene management.</p><p style="margin-top:0.75rem;font-size:0.875rem;color:var(--text-muted);"><strong style="color:var(--accent);">Work Process:</strong> Prototyped core movement systems first, then integrated scene management and inventory. Profiled performance using Unity Profiler to identify and fix bottlenecks. <strong style="color:var(--accent);">Results:</strong> Achieved stable 60fps gameplay, passed all module assessment criteria, and received positive feedback on code structure and game feel.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check-circle"></i> C# scripted player controller and camera system</li>
+              <li><i class="fas fa-check-circle"></i> Inventory and scene transition systems</li>
+              <li><i class="fas fa-check-circle"></i> Render optimisation — reduced draw calls</li>
+            </ul>
+            <div class="project-meta"><span><i class="fas fa-graduation-cap"></i> Year 2 Sem 2</span></div>
+            <div class="project-links"><a href="https://github.com/D-exter/WIU-DX1225-3DGP" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a></div>
+            <div class="screenshot-row" style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+              
+              <img src="images/wiu4-ss1.png" alt="WIU4 Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
+              <img src="images/wiu4-ss2.png" alt="WIU4 Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-media">
+            
+            <div class="video-wrap"><iframe src="https://drive.google.com/file/d/147pSceDlMEoHT7JuJ-BBJ7OnO1_lXnIO/preview" allowfullscreen allow="autoplay"></iframe></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag tag-unity">Unity</span><span class="tag tag-csharp">C#</span><span class="tag tag-2d">2D</span></div>
+            <h3>WIU 3 — 2D Unity Platformer</h3>
+            <p>A 2D platformer developed in Unity with sprite animations, tile-based level design, player controls, and enemy AI.</p><p style="margin-top:0.75rem;font-size:0.875rem;color:var(--text-muted);"><strong style="color:var(--accent);">Work Process:</strong> Designed levels on paper before implementing in Unity's tilemap system. Iterated on enemy AI behaviour based on playtesting feedback to balance difficulty. <strong style="color:var(--accent);">Results:</strong> Delivered a complete, polished game loop with multiple levels, full audio, and UI - graded and approved by module tutor.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check-circle"></i> Sprite animation and tile-based level design</li>
+              <li><i class="fas fa-check-circle"></i> Enemy AI behaviour and score tracking</li>
+              <li><i class="fas fa-check-circle"></i> Full game loop with UI and audio</li>
+            </ul>
+            <div class="project-meta"><span><i class="fas fa-graduation-cap"></i> Year 2 Sem 1</span></div>
+            <div class="project-links"><a href="https://github.com/D-exter/WIU-DX1224-2DGP" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a></div>
+            <div class="screenshot-row" style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+              
+              <img src="images/wiu3-ss1.png" alt="WIU3 Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
+              <img src="images/wiu3-ss2.png" alt="WIU3 Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-media">
+            
+            <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1emDdJ2jgTkcw6FWrIRAjXALCXiP3bZet/preview" allowfullscreen allow="autoplay"></iframe></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag tag-cpp">C++</span><span class="tag tag-opengl">OpenGL</span><span class="tag tag-3d">3D</span></div>
+            <h3>WIU 2 — 3D OpenGL Carnival Game</h3>
+            <p>A 3D carnival game built from scratch using OpenGL and C++, with custom shaders, lighting, and physics.</p><p style="margin-top:0.75rem;font-size:0.875rem;color:var(--text-muted);"><strong style="color:var(--accent);">Work Process:</strong> Divided rendering, physics, and game logic across the team of 4. I was responsible for the lighting system and collision detection, integrated weekly using version control. <strong style="color:var(--accent);">Results:</strong> Successfully delivered a functional 3D carnival game with realistic physics, presented and graded by the module tutor.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check-circle"></i> Custom vertex and fragment shaders</li>
+              <li><i class="fas fa-check-circle"></i> Real-time lighting and 3D model loading</li>
+              <li><i class="fas fa-check-circle"></i> Physics-based collision detection</li>
+            </ul>
+            <div class="project-meta"><span><i class="fas fa-users"></i> 4 Members</span><span><i class="fas fa-graduation-cap"></i> Year 1 Sem 2</span></div>
+            <div class="project-links"><a href="https://github.com/D-exter/WIU-DX1125-CGSP" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a></div>
+            <div class="screenshot-row" style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+              
+              <img src="images/wiu2-ss1.png" alt="WIU2 Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
+              <img src="images/wiu2-ss2.png" alt="WIU2 Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-media">
+            
+            <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1eG0qj8BKt2c1epvFSTIR0XzgFT0RMnUn/preview" allowfullscreen allow="autoplay"></iframe></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag tag-cpp">C++</span><span class="tag tag-2d">2D</span><span class="tag">Console</span></div>
+            <h3>WIU 1 — 2D Console RPG</h3>
+            <p>A text-based console RPG in C++ applying OOP fundamentals, data structures, and game state management.</p><p style="margin-top:0.75rem;font-size:0.875rem;color:var(--text-muted);"><strong style="color:var(--accent);">Work Process:</strong> Collaborated in a team of 5, each owning specific game systems. Used Trello to manage tasks and produced a full game design document before coding began. <strong style="color:var(--accent);">Results:</strong> Completed within the 2-week deadline with all core RPG mechanics functional - combat, inventory, and branching story - graded by the module tutor.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check-circle"></i> OOP — encapsulation, inheritance, polymorphism</li>
+              <li><i class="fas fa-check-circle"></i> Game design document with high concept statement</li>
+              <li><i class="fas fa-check-circle"></i> Task management via Trello</li>
+            </ul>
+            <div class="project-meta"><span><i class="fas fa-users"></i> 5 Members</span><span><i class="fas fa-graduation-cap"></i> Year 1 Sem 1</span></div>
+            <div class="project-links"><a href="https://github.com/D-exter/WIU-DX1124-ISP" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a></div>
+            <div class="screenshot-row" style="margin-top:1rem; display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+              
+              <img src="images/wiu1-ss1.png" alt="WIU1 Screenshot 1" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
+              <img src="images/wiu1-ss2.png" alt="WIU1 Screenshot 2" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px;">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-label">05 / Skills</div>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="card skill-card"><div class="skill-icon"><i class="fas fa-gamepad"></i></div><h3>Unity</h3><div class="skill-level"><div class="progress-bar"><div class="progress" style="width:75%"></div></div><span>Proficient</span></div></div>
+        <div class="card skill-card"><div class="skill-icon"><i class="fas fa-code"></i></div><h3>C#</h3><div class="skill-level"><div class="progress-bar"><div class="progress" style="width:70%"></div></div><span>Proficient</span></div></div>
+        <div class="card skill-card"><div class="skill-icon"><i class="fas fa-terminal"></i></div><h3>C++</h3><div class="skill-level"><div class="progress-bar"><div class="progress" style="width:65%"></div></div><span>Intermediate</span></div></div>
+        <div class="card skill-card"><div class="skill-icon"><i class="fas fa-cube"></i></div><h3>OpenGL</h3><div class="skill-level"><div class="progress-bar"><div class="progress" style="width:50%"></div></div><span>Intermediate</span></div></div>
+        <div class="card skill-card"><div class="skill-icon"><i class="fas fa-network-wired"></i></div><h3>Multiplayer Networking</h3><div class="skill-level"><div class="progress-bar"><div class="progress" style="width:55%"></div></div><span>Intermediate</span></div></div>
+        <div class="card skill-card"><div class="skill-icon"><i class="fas fa-cubes"></i></div><h3>OOP &amp; Game Systems</h3><div class="skill-level"><div class="progress-bar"><div class="progress" style="width:72%"></div></div><span>Proficient</span></div></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-name">W. Nisul Senuda Perera</div>
+      <div class="footer-sub">Game Programmer · Diploma Graduate · Nanyang Polytechnic</div>
+      <div class="social-links">
+        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nisulrocks@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2026 W. Nisul Senuda Perera. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  
+  <div id="videoModal" class="video-modal">
+    <button class="video-modal-close" aria-label="Close">&times;</button>
+    <div class="video-modal-inner">
+      <iframe id="videoModalFrame" src="" allowfullscreen allow="autoplay"></iframe>
+    </div>
+  </div>
+
 </body>
 </html>
